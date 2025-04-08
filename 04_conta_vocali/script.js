@@ -18,6 +18,7 @@ function vowelsFinder(word) {
       vowelsArray.push(wordLetters);
     }
   }
+
   return vowelsArray;
   console.log(vowelsArray.length);
 }
