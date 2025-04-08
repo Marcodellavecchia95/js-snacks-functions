@@ -1,9 +1,20 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-let newArray = [];
+
 // Dichiara la funzione qui.
-function findNamesLetter(namesArray, toFindLetter) {
+// function findNamesLetter(namesArray, toFindLetter) {
+//   let newNamesList = [];
+//   for (let i = 0; i < namesArray.length; i++) {
+//     let name = namesArray[i];
+//     if (toFindLetter === name[0]) {
+//       newNamesList.push(name);
+//     }
+//   }
+//   return newNamesList;
+// }
+
+const findNamesLetter = (namesArray, toFindLetter) => {
   let newNamesList = [];
   for (let i = 0; i < namesArray.length; i++) {
     let name = namesArray[i];
@@ -12,7 +23,7 @@ function findNamesLetter(namesArray, toFindLetter) {
     }
   }
   return newNamesList;
-}
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 

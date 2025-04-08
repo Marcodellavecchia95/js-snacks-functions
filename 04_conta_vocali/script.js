@@ -10,7 +10,20 @@ function isCharVowel(char) {
   );
 }
 // Dichiara la funzione qui.
-function vowelsFinder(word) {
+// function vowelsFinder(word) {
+//   let vowelsArray = [];
+//   for (let i = 0; i < word.length; i++) {
+//     let wordLetters = word[i];
+//     if (isCharVowel(wordLetters)) {
+//       vowelsArray.push(wordLetters);
+//     }
+//   }
+
+//   return vowelsArray;
+//   console.log(vowelsArray.length);
+// }
+
+const vowelsFinder = (word) => {
   let vowelsArray = [];
   for (let i = 0; i < word.length; i++) {
     let wordLetters = word[i];
@@ -21,7 +34,7 @@ function vowelsFinder(word) {
 
   return vowelsArray;
   console.log(vowelsArray.length);
-}
+};
 
 // ######################################################################
 // Main

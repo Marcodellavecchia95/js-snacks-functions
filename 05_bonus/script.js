@@ -9,19 +9,29 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 
-function hello(name) {
+// function hello(name) {
+//   let hours = new Date().getHours();
+
+//   if (hours > 0 && hours < 14) {
+//     return `Buongiorno ${name}`;
+//   } else if (hours >= 14 && hours <= 17) {
+//     return `Buon pomeriggio ${name}`;
+//   } else {
+//     return `Buonasera ${name}`;
+//   }
+// }
+
+const hello = (name) => {
   let hours = new Date().getHours();
-  let goodMorning = `Buongiorno ${name}`;
-  let goodAfternoon = `Buon pomeriggio ${name}`;
-  let goodEvening = `Buonasera ${name}`;
+
   if (hours > 0 && hours < 14) {
-    return goodMorning;
+    return `Buongiorno ${name}`;
   } else if (hours >= 14 && hours <= 17) {
-    return goodAfternoon;
+    return `Buon pomeriggio ${name}`;
   } else {
-    return goodEvening;
+    return `Buonasera ${name}`;
   }
-}
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(hello(name));
